@@ -1,0 +1,41 @@
+{
+  "name": "object-transformation-utils",
+  "version": "0.1.0",
+  "description": "Set of utility classes to configure transformations executed over an MIMI-Type object instance",
+  "main": "index.js",
+  "author": {
+    "name": "cbrgpl",
+    "email": "tttcbrg@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "js",
+    "transformation",
+    "object"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cbrgpl/object-transformation-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/cbrgpl/object-transformation-utils/issues",
+    "email": "tttcbrg@gmail.com"
+  },
+  "homepage": "https://github.com/cbrgpl/object-transformation-utils",
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "start": "node libs/index.js",
+    "lint": "eslint --ignore-path .gitignore .",
+    "fix": "eslint --fix --ignore-path .gitignore .",
+    "test": "npm run lint && jest test"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "jest": "^27.4.7"
+  }
+}

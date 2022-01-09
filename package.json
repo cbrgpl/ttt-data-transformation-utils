@@ -29,7 +29,7 @@
     "start": "node libs/index.js",
     "lint": "eslint --ignore-path .gitignore .",
     "fix": "eslint --fix --ignore-path .gitignore .",
-    "test": "npm run lint && jest test"
+    "test": "jest test"
   },
   "devDependencies": {
     "eslint": "^8.6.0",

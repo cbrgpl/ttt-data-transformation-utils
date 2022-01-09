@@ -12,7 +12,11 @@ JS Library representing utility allowing assigning a chain of transformations to
 
 # Getting Started
 ```js
-console.log('hello')
+
+import { Transformer, TwoWayTransformer } from 'data-transformation-utils'
+
+const transformer = new Transformer(transformations)
+
 ```
 <br>
 <br>
@@ -48,15 +52,18 @@ const transformer = new Transformer( transformationChain )
 
 transformer.applyTransformations( transformativeValue )
 
-
-Result:
-
-    {
-        massProp: 1,
-        stringProp: null
-    }
-
 ```
+
+### Result:
+<br>
+
+```json
+{
+  massProp: 1,
+  stringProp: null
+}
+```
+
 <br>
 <br>
 
@@ -81,13 +88,17 @@ const transformedValue = transformer.applyTransformations( transformativeValue, 
 
 console.log( transformedValue )
 
-
-Result:
-
-    {
-        value:'null13'
-    }
 ```
+
+### Result:
+<br>
+
+```json
+{
+  value: "null13"
+}
+```
+
 
 ## TwoWayTransformer
 <br>
@@ -132,14 +143,16 @@ const inverseTransformedValue = transformer.inverseTransform( directTransformedV
 
 console.log( inverseTransformedValue )
 
+```
 
-Result:
+### Result:
+<br>
 
-    {
-        massProp: 1000,
-        stringProp: ''
-    }
-
+```json
+{
+  massProp: 1000,
+  stringProp: ""
+}
 ```
 
 <br>
@@ -184,7 +197,7 @@ Result:
 | DIRECT | Direct transformation of data |
 | INVERSE | Inverse transformation |
 
-*The sequence of functions of converters in a chain is important*
+*The sequence of transformation functions in a chain is important*
 
 <br>
 <br>
@@ -198,8 +211,8 @@ Result:
 
 <br>
 
-```js
-pseudocode:
+```
+Pseudocode:
 
 transformationMods = {
         TwoWayTransformer.MODS.DIRECT: array[],

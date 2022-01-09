@@ -1,6 +1,6 @@
 {
   "name": "data-transformation-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set of utility classes to configure transformations executed over an MIMI-Type object instance",
   "main": "dist/object-transformation-utils.js",
   "author": {

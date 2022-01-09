@@ -57,7 +57,7 @@ transformer.applyTransformations( transformativeValue )
 ### Result:
 <br>
 
-```json
+```js
 {
   massProp: 1,
   stringProp: null
@@ -93,7 +93,7 @@ console.log( transformedValue )
 ### Result:
 <br>
 
-```json
+```js
 {
   value: "null13"
 }
@@ -148,7 +148,7 @@ console.log( inverseTransformedValue )
 ### Result:
 <br>
 
-```json
+```js
 {
   massProp: 1000,
   stringProp: ""

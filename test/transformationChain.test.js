@@ -26,7 +26,6 @@ test( 'TransformChain constructor - массив с валидными функ�
   } )() ).toBe( 2 )
 } )
 
-// Array с невалидной функцией
 test( 'TransformChain constructor - массив с невалидной функцией', () => {
   expect( () => ( () => {
     const transformationArray = [

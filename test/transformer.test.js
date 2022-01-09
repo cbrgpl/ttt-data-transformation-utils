@@ -1,5 +1,7 @@
 const Transformer = require( './../libs/transformer/transformer' )
 
+// TODO Написать 2 сложных кейса по 1 на каждый класс
+
 test( 'Transformer constructor - валидный массив функций', () => {
   expect( ( () => {
     const transformations = [

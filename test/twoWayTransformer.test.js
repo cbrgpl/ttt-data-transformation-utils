@@ -32,7 +32,6 @@ test( 'TwoWayTransformer constructor - ({directChain, inverseChain})', () => {
   } )() ).toBe( 4 )
 } )
 
-// протестить конструктор с одной цепочкой
 test( 'TwoWayTransformer constructor - ({ directChain })', () => {
   expect( () => ( () => {
     const directTransformations = [
@@ -49,8 +48,6 @@ test( 'TwoWayTransformer constructor - ({ directChain })', () => {
     return transMods[ TwoWayTransformer.MODS.DIRECT ].transformationArray.length
   } )() ).toThrow( TypeError )
 } )
-
-// протестить directTransform с валидными объектом
 
 test( 'TwoWayTransformer directTransform - (object)', () => {
   expect( ( () => {
@@ -83,8 +80,6 @@ test( 'TwoWayTransformer directTransform - (object)', () => {
   } )
 } )
 
-// протестить inerseTransform с валидным объектом
-
 test( 'TwoWayTransformer inverseTransform - (object)', () => {
   expect( ( () => {
     const directTransformations = [
@@ -115,8 +110,6 @@ test( 'TwoWayTransformer inverseTransform - (object)', () => {
     c: 'str'
   } )
 } )
-
-// протестить эквивалентность directTransform и inverseTransform(что данные возвращаются в исходное состояние)
 
 test( 'TwoWayTransformer - эквивалентность преобразований', () => {
   expect( ( () => {

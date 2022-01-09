@@ -1,5 +1,5 @@
 {
-  "name": "object-transformation-utils",
+  "name": "data-transformation-utils",
   "version": "0.1.0",
   "description": "Set of utility classes to configure transformations executed over an MIMI-Type object instance",
   "main": "index.js",
@@ -15,13 +15,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cbrgpl/object-transformation-utils"
+    "url": "https://github.com/cbrgpl/data-transformation-utils"
   },
   "bugs": {
-    "url": "https://github.com/cbrgpl/object-transformation-utils/issues",
+    "url": "https://github.com/cbrgpl/data-transformation-utils/issues",
     "email": "tttcbrg@gmail.com"
   },
-  "homepage": "https://github.com/cbrgpl/object-transformation-utils",
+  "homepage": "https://github.com/cbrgpl/data-transformation-utils",
   "engines": {
     "node": ">=14"
   },

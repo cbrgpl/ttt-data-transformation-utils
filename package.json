@@ -1,8 +1,8 @@
 {
   "name": "data-transformation-utils",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Set of utility classes to configure transformations executed over an MIMI-Type object instance",
-  "main": "index.js",
+  "main": "dist/object-transformation-utils.js",
   "author": {
     "name": "cbrgpl",
     "email": "tttcbrg@gmail.com"
@@ -11,7 +11,7 @@
   "keywords": [
     "js",
     "transformation",
-    "object"
+    "data"
   ],
   "repository": {
     "type": "git",
@@ -22,20 +22,24 @@
     "email": "tttcbrg@gmail.com"
   },
   "homepage": "https://github.com/cbrgpl/data-transformation-utils",
-  "engines": {
-    "node": ">=14"
-  },
   "scripts": {
-    "start": "node libs/index.js",
+    "run": "node libs/index.js",
+    "build": "webpack --env production --progress --config-name main --config webpack.config.js",
     "lint": "eslint --ignore-path .gitignore .",
     "fix": "eslint --fix --ignore-path .gitignore .",
     "test": "jest test"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "babel-loader": "^8.2.3",
     "eslint": "^8.6.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-standard": "^5.0.0",
-    "jest": "^27.4.7"
+    "jest": "^27.4.7",
+    "terser-webpack-plugin": "^5.3.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
   }
 }
